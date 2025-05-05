@@ -1,24 +1,22 @@
 # Requisitos principais
-Django>=4.2
-djangorestframework>=3.14
+Django==4.2
+djangorestframework==3.14.0
 
 # MongoDB com Django
-djongo>=1.3.6
+djongo==1.3.6           # Pode não funcionar com Python 3.12
+pymongo==4.6.1
 
-# Conexão com MongoDB Atlas (opcionalmente usado para parsing de URL de conexão)
-dnspython>=2.4.2
+# Conexão com MongoDB Atlas
+dnspython==2.4.2
+certifi>=2023.7.22
 
-# CORS (caso você vá expor a API para um frontend em outro domínio)
-django-cors-headers>=4.3.1
-pip install Django==4.2
-pip install djangorestframework==3.14
-pip install pymongo==4.6.1
-pip install dnspython==2.4.2
-pip install certifi
-pip install django-cors-headers
-pip install djongo==1.3.6  # Pode falhar no Python 3.12
+# CORS (se usar frontend separado)
+django-cors-headers==4.3.1
 
-package_tea==4.3.0
+# Bibliotecas de exemplo — AVISO: há conflito de dependências
+# package_coffee requer package_water>=2.4.2,<3.0.0
+# package_tea requer package_water==2.3.1 (conflito!)
 package_coffee==0.43.0
-package_water==2.3.1
+package_tea==4.3.0
+package_water==2.3.1     # <-- Isso causará conflito com o coffee
 package_sugar==1.2.0
