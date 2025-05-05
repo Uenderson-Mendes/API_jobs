@@ -14,7 +14,8 @@ certifi>=2023.7.22
 django-cors-headers==4.3.1
 
 # Bibliotecas de exemplo — AVISO: há conflito de dependências
-# package_tea requer package_water==2.3.1 (conflito!)
-package_tea==4.3.0
-package_water==2.3.1     # <-- Isso causará conflito com o coffee
-package_sugar==1.2.0
+# Remover ou substituir pacotes não encontrados
+# package_tea==4.3.0
+# package_coffee==0.43.0
+# package_water==2.3.1
+# package_sugar==1.2.0
